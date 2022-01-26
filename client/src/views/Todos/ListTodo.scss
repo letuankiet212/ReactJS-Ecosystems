@@ -1,0 +1,27 @@
+.todo {
+  &-container {
+    width: 400px;
+    margin: 0 auto;
+  }
+  &-add {
+    .text {
+    }
+    .submit {
+    }
+  }
+  &-list {
+  }
+
+  p:first-child {
+    background-color: yellow;
+  }
+
+  height: 40px;
+  border-bottom: 1px solid gray;
+  margin: 10px;
+}
+
+button {
+  cursor: pointer;
+  margin: 0 5px;
+}

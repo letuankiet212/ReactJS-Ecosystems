@@ -1,11 +1,11 @@
 import './App.scss';
-import TestComponent from './Example/TestComponent';
+import ListTodo from './Todos/ListTodo';
 
 const App = () => {
   return (
     <div className="App">
-      hello
-      <TestComponent />
+      <p>Simple TODO Apps with ReactJS</p>
+      <ListTodo />
     </div>
   );
 };

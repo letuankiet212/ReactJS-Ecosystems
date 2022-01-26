@@ -12,6 +12,7 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.13",
     "prettier": "^2.4.1",
+    "react-toastify": "^8.1.0",
     "uuidv4": "^6.2.12"
   },
   "devDependencies": {

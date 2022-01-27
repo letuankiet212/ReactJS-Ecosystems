@@ -1,8 +1,14 @@
 import React from 'react';
 import AddComponent from './AddComponent';
 import ListComponent from './ListComponent';
+import { withRouter } from 'react-router';
 
 class TestComponent extends React.Component {
+  componentDidMount() {
+    setTimeout(() => {
+      this.props.history.push('/');
+    }, 3000);
+  }
   state = {
     listJob: []
   };
@@ -26,6 +32,7 @@ class TestComponent extends React.Component {
     });
   };
   render() {
+    console.log('>>> Check Props :', this.props);
     let { listJob } = this.state;
     return (
       <>
@@ -36,4 +43,4 @@ class TestComponent extends React.Component {
   }
 }
 
-export default TestComponent;
+export default withRouter(TestComponent);

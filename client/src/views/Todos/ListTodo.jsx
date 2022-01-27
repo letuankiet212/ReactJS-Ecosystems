@@ -1,6 +1,7 @@
 import React from 'react';
 import AddTodo from './AddTodo';
 import './ListTodo.scss';
+import { toast } from 'react-toastify';
 
 class ListTodo extends React.Component {
   state = {
@@ -16,7 +17,7 @@ class ListTodo extends React.Component {
     this.setState({
       listTodos: [...this.state.listTodos, data]
     });
-    console.log('>>> Data Array', this.state.listTodos);
+    toast.success(`Thành Công`, {});
   };
   handleEditTodo = (idTodo) => {
     console.log('>>> Edit Todo ID : ', idTodo);

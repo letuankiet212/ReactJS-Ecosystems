@@ -2,7 +2,7 @@ import React from 'react';
 
 class AddTodo extends React.Component {
   state = {
-    value: null
+    value: ''
   };
   handleOnChange = (data) => {
     this.setState({

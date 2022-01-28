@@ -6,6 +6,7 @@ import ListTodo from './Todos/ListTodo';
 import TestComponent from './Example/TestComponent';
 import ListUser from './Users/ListUser';
 import './App.scss';
+import HookHome from './ReactHook/Home/Home';
 const App = () => {
   return (
     <Router>
@@ -20,6 +21,9 @@ const App = () => {
           </Route>
           <Route path="/users">
             <ListUser />
+          </Route>
+          <Route path="/hook/home">
+            <HookHome />
           </Route>
         </Switch>
         <ToastContainer
